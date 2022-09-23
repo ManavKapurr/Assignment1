@@ -1,0 +1,23 @@
+
+db.Customer.insertMany([
+{ customername:"Manav",customeremail:"kapurmanav13@gmail.com",customermobno:"******123",customerwallet:"10000"},{ customername:"Manavv",customeremail:"kapurmanav14@gmail.com",customermobno:"******123",customerwallet:"10000"},{ customername:"Manavkapur",customeremail:"kapurmanav15@gmail.com",customermobno:"******123",customerwallet:"10000"}])
+
+db.Address.insertMany([
+{customercity:"Delhi",customerpincode:"600012",customeraddress:"center"},{customercity:"Gurgaon",customerpincode:"144002",customeraddress:"center2"},{customercity:"Bhopal",customerpincode:"144003",customeraddress:"center3"}])
+
+db.Orders.insertMany([
+{orderstatus:"Delivered",orderamount:"10000"},{orderstatus:"pending",orderamount:"100000"},{orderstatus:"Out for Delivery",orderamount:"1000000"}])
+
+db.Vendors.insertMany([
+{vendorname:"Supplychain1", vendoremail:"Supplychain1@gmail.com",vendormobno:"******123",vendorwallet:"10000000"},{vendorname:"Supplychain2", vendoremail:"Supplychain1@gmail.com",vendormobno:"******123",vendorwallet:"10000000"}])
+
+db.Products.insertMany([
+{productname:"OrderItem",productcategory:"cat1",productprice:"10200"},{productname:"OrderItem2",productcategory:"cat2",productprice:"10000"}])
+
+db.Products.find({productname:"OrderItem"},{productprice:"10200"})
+
+db.Address.find({customercity:"Delhi"})
+
+db.Orders.find({orderstatus:"pending"})
+
+db.Address.find({customerpincode:"600012"})
